@@ -1,0 +1,10 @@
+#include <stdio.h>
+#define Limit 5
+int main()
+{
+for(int i=0;i<Limit;i++)
+{
+printf("%d\n",i);
+}
+return 0
+}
