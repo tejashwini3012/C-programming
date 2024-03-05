@@ -1,0 +1,27 @@
+The distance between two cities (in km.) is input through the keyboard. Write a program to convert and print this distance in meters, feet, inches and centimeters.
+#include<stdio.h>
+int main()
+{
+int ds, mt,cm;
+float feet,inches;
+printf("distance btw two cities in km:");
+scanf("%d",&ds);
+mt= ds*1000;
+cm=ds*100000;
+feet=ds*3280.80;
+inches=ds*39370.1;
+printf("meters:%d\n",mt);
+printf("centimeter:%d\n",cm);
+printf("feet:%.2f\n",feet);
+printf("inches:%.2f\n",inches);
+return 0;
+}
+
+output:
+distance btw two cities in km:3
+meters:3000
+centimeter:300000
+feet:9842.40
+inches:118110.30
+
+
