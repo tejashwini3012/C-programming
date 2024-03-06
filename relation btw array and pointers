@@ -1,0 +1,19 @@
+C Program to demonstrate the relation between arrays and pointers
+#include<stdio.h>
+int main()
+{
+    int a[5]={10,20,30,40,50};
+    int *ptr=&a[0];
+    printf("address stored in the array name %p\n address stored in the 1st array elements %p\n",a,&a[0]);
+    printf("array elements using pointer:");
+    for(int i=0;i<5;i++)
+    {
+        printf("%d ",*ptr++);
+    }
+    return 0;
+}
+
+output
+address stored in the array name 0x7ffc59d2e590
+address stored in the 1st array elements 0x7ffc59d2e590
+array elements using pointer:10 20 30 40 50 
